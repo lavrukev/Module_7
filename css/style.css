@@ -15,7 +15,6 @@ body {
 	text-align: left;
 	
 }
-
 section { 
 	width: 960px;  
 	background-image:url(../images/header-bg.png);
@@ -25,41 +24,29 @@ section {
 	background-color: #FFFFFF;
 	margin: 25px auto; 
 	border: 1px solid #000000;
-
 } 
+.first::after {
+    clear: both;
+    content: "";
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
 article { 
 	width:680px;
 	padding: 0 50px; 
 	float:right;
 } 
-h1 {
-	font-size: 25px;
-}
 nav {
-	/*float: left; */
-	width: 200px; 
 	margin-left: 15px;
-	/*padding: 15px 10px 15px 35px;*/
 }
-/*figure { 
-	height:120px;
-	float:left;
-	width:100%;
-	margin-bottom:40px;
-	margin-top: 30px;
-} */
-
-
 nav a {
 	color:#000;
 }
-
 nav a:hover {
 	text-decoration:underline;
 	font-size:14px;
 }
-
-
 nav ul  {
 	margin: 0px;
 	padding-left: 20px;
@@ -78,12 +65,15 @@ nav ul  li a:hover {
 	/* font-size:14px; */
 	text-decoration:underline;
 }
-
 footer { 
-	padding: 0 10px 0 20px; 
+	width: 960px;
+	/*padding: 0 10px 0 20px; */
 	background:#DDDDDD; 
-	height:125px;
+	height:45px;
+	display: inline-block;
+	text-align: center;
 } 
+
 footer p {
 	margin: 0; 
 	padding: 10px 0; 
@@ -96,49 +86,19 @@ footer a :hover {
 	color:black;
 	text-decoration:underline;
 }
-
-/*.fltrt { 
-	float: right;
-	margin-left: 8px;
-}
-.fltlft { 
-	float: left;
-	margin-right: 8px;
-}
-.clearfloat { 
-	clear:both;
-    height:0;
-    font-size: 1px;
-    line-height: 0px;
-}*/
-/*header img {
-	margin: 10px;
-}*/
 .logo {
-/*	margin: 10px;*/
+
 	padding: 10px 0 0 25px;
 	float: left;
-/*	height: 100px;
-	width: 300px;*/
 }
 .contacts {
   width: 200px;
   height: 100px;
-  /*margin: 10px;*/
   float: left;
   line-height: 21px;
   font-size: 14px;
   margin-left: 250px;
 }
-.logo {
-/*width:300px;
-height:100px;*/
-/
-/*float:left;*/
-}
-/*h1 {
-	line-height:150%;
-}*/
 .bordered {
 	margin:15px;
 	border-radius:10px;
@@ -146,18 +106,14 @@ height:100px;*/
 	width: 300px;
 	margin-left: 115px;
 }
-/*.clearfix {
-	width:500px;
-	height:2px;
-	float:none;
-}*/
 h3:last-child {
 	margin-top: 40px
+}
+p:first-child {
+	font-size: 25px;
+	font-weight: bold;
+
 }
 a {
 	text-align: center;
 }
-/*a img {
-	width: 300px;
-}
-*/
